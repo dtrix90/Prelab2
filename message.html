@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Pre-lab 2</title>
+    <script defer src="code.js"></script>
+</head>
+<body>
+
+    <form class="form" id="form" onsubmit="return validate()">
+        
+        <div>
+            <label for="fname">First name:</label><br>
+            <input type="text" placeholder="First name" id="fname" name="fname"><br>
+        </div>
+
+        <div>
+            <label for="lname">Last name:</label><br>
+            <input type="text" placeholder="Last name"id="lname" name="lname"><br>
+        </div>
+
+        <div>
+            <label for="email">Email:</label><br>
+            <input type="mail" placeholder="Email address" id="email" name="email"><br>
+        </div>
+
+        <div>
+            <label for="number">Number:</label><br>
+            <input type="telephone" placeholder="Enter 10 digits" id="number" name="number"><br>
+        </div>
+
+        <div>
+            <label for="subject">Subject:</label><br>
+            <input type="subject" placeholder="Enter subject" id="subject" name="subject"><br>
+        </div>
+
+        <label for="message">Message:</label><br>
+        <textarea id ="words" name="message" placeholder="Write message..." id="message" cols="30" rows="10"></textarea><br>
+        
+        <p>Words left: 
+            <span id="show">200</span>
+        </p>
+
+
+        <button type="submit">Submit</button>
+        <button><a href="index.html">Go back</a></button><br>
+    </form>
+
+    <div id="error"></div>
+
+</body>
+</html>
